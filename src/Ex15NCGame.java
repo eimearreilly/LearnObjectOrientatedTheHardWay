@@ -4,14 +4,15 @@ import java.util.Scanner;
  * Created by eimearreilly on 03/02/2017.
  */
 public class Ex15NCGame {
-    public static void main(String [] args){
+    public static void main(String [] args)
+    {
         Scanner kb = new Scanner(System.in);
 
         String p = "X";
-        Ex15NoughtsandCrossesObject ttt = new Ex15NoughtsandCrossesObject();
+        Ex15NoughtsCrossesObject ttt = new Ex15NoughtsCrossesObject();
         int r, c;
 
-        while( !(ttt.isWinner("X")) || ttt.isWinner("O") || ttt.isFull())){
+        while( !(ttt.isWinner("X")) || ttt.isWinner("O") || ttt.isFull()){
             System.out.println(ttt);
             System.out.print("'"+p+"', choose your location (row column): ");
             r = kb.nextInt();
