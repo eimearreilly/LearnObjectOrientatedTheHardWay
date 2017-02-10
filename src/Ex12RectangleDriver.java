@@ -1,6 +1,4 @@
-/**
- * Created by eimearreilly on 02/02/2017.
- */
+
 public class Ex12RectangleDriver {
     public static void main(String [] args){
         // Rectangle r = new Rectangle();

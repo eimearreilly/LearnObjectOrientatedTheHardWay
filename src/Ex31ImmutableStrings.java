@@ -30,8 +30,8 @@ public class Ex31ImmutableStrings {
 
         //Test new method to confirm ArrayLists are mutable
         System.out.println("Before replaceFirst() the array was " + list);
-        ArrayList rf = replaceFirst(list);
-        System.out.println("Afterwards it was " + replaceFirst(list));
+        replaceFirst(list);
+        System.out.println("Afterwards it was " + list);
     }
 
     public static void swap( String a, String b ) {
@@ -43,8 +43,7 @@ public class Ex31ImmutableStrings {
     }
 
     // Extra method how can this work without using return???
-    public static ArrayList<Double> replaceFirst(ArrayList<Double> arList){
+    public static void replaceFirst(ArrayList<Double> arList){
         arList.set(0,0.0);
-        return arList;
     }
 }

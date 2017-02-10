@@ -25,6 +25,10 @@ public class Ex36BreakthroughGame {
                 continue;
             }
 
+            goLeft = pick.canMove(-1);
+            goForward = pick.canMove(0);
+            goRight = pick.canMove(1);
+
             out.println();
             do{
                 if(goLeft)
@@ -44,7 +48,6 @@ public class Ex36BreakthroughGame {
         if ( board.isWinner("W") ) out.println("Player \"W\" wins!");
         else
             out.println("Player \"B\" wins!");
-            }
-        }
     }
 }
+

@@ -29,12 +29,14 @@ public class Ex24JavaHardArrayList<E> {
     }
 
     public void add(int index, E obj) {
-        if (used <= arr.length)
-            grow();
-        // move the other values over to make space
-        for (int i = used; i > index; i--) arr[i] = arr[i - 1];
-        arr[index] = obj;
-        used++;
+        // Make sure the new index isn't bigger than the current size of the list.
+        if (index <= used){
+            for (int i = used; i > index; i--)
+                arr[i] = arr[i - 1];
+            arr[index] = obj;
+            used++;
+        }
+        else throw new IndexOutOfBoundsException("This is greater than the index of the object ");
     }
 
     public E set(int index, E obj){

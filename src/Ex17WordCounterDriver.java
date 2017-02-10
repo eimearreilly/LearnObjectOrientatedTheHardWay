@@ -7,7 +7,7 @@ public class Ex17WordCounterDriver {
 
         Ex17WordCounter wc = new Ex17WordCounter(book);
 
-        System.out.println(wc.getCount("the"));
+        System.out.println(wc.getCount("The"));
         System.out.println(wc.getCount("I"));
         System.out.println(wc.getCount("a"));
     }

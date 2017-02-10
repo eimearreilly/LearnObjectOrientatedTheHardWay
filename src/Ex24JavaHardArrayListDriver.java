@@ -37,6 +37,9 @@ public class Ex24JavaHardArrayListDriver {
         }
         System.out.println("The total is " + total);
 
+        // Test the new add method
+        bins.add(70,8);
+        System.out.println(bins + "testing...");
         Ex24JavaHardArrayList<Character> letters = new Ex24JavaHardArrayList<>();
         letters.add('z'); // auto-boxes char
 

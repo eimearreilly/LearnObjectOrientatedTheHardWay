@@ -1,6 +1,4 @@
 import java.io.FileInputStream;
-import java.net.URL;
-import java.util.Scanner;
 
 public class Ex22IBeforeEDriver {
     public static void main( String[] args ) throws Exception {

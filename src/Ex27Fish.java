@@ -13,17 +13,20 @@ public class Ex27Fish {
     private static int count = 0;
     private String color;
 
-    public Ex27Fish(String name){
+    public Ex27Fish(String name, String color){
         this.name = name;
+        this.color = color;
         count ++;
         id = count;
     }
 
     public String toString(){
-        return name + ",fish #" + id + " of " + count;
+        return name + ",fish #" + id + " of " + count + " and the colour is "+color;
     }
 
     public static int numCreated(){
         return count;
     }
+
+
 }

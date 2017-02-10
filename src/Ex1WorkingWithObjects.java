@@ -3,10 +3,6 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * Created by eimearreilly on 01/02/2017.
- */
-
 public class Ex1WorkingWithObjects {
     public static void main(String [] args) throws Exception {
         File f = new File("datafiles/phonetic-alphabet.txt");

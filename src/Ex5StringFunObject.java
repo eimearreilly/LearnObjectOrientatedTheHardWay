@@ -1,7 +1,5 @@
-/**
- * Created by eimearreilly on 02/02/2017.
- */
 public class Ex5StringFunObject {
+
     String message;
 
     public void setMessage(String s){
@@ -28,6 +26,7 @@ public class Ex5StringFunObject {
         message = result;
     }
 
+    // Create a method to remove half the letters from the message.
     public void halfMessage(){
         String half = "";
         int halfpos = message.length()/2;

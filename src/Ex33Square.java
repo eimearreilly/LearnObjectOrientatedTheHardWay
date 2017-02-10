@@ -4,6 +4,7 @@ public class Ex33Square extends Ex33Rect{
     }
 
     public Ex33Square(double side){
+
         super(side, side);
     }
 

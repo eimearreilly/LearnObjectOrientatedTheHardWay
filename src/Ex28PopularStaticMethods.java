@@ -42,8 +42,10 @@ public class Ex28PopularStaticMethods {
         // to a string like "0110110" into a regular base-10 number.
 
         String testInt = "010010";
-        //parseInt(testInt, int radix)
+        System.out.println("eimear test " + Integer.valueOf(testInt,2));
 
+
+        //parseInt(testInt, int radix)
 
     }
 }

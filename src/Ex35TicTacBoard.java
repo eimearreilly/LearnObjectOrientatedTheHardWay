@@ -52,6 +52,11 @@ public class Ex35TicTacBoard extends Ex35Gameboard {
 
     // Method that's true when there have been 8 moves and the last remaining move wouldn't cause anyone to win, either.
     // Modify the game to skip that last turn when this occurs.
+    public boolean lastMove(){
+        // number of moves == 8 turn 9 will not result in a win
+        if(numTurns == 8 && isWinner())
+        return true;
+    }
 
 
 }

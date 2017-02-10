@@ -6,6 +6,7 @@ public class Ex32NumberGuy {
     public int getNumber(){return number; }
     public String toString(){ return "" + number; }
 
+    //Exercise
     public void doubleMe(double d){
         d = d*2;
     }

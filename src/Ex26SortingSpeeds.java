@@ -17,6 +17,8 @@ public class Ex26SortingSpeeds {
         System.out.println( "1) Primitive ints using selection sort" );
         System.out.println( "2) Integer objects using selection sort" );
         System.out.println( "3) Integer objects using Arrays.sort()" );
+
+        //Exercise add 4th menu option
         System.out.println( "4) Array of primitive integers Arrays.sort()");
         System.out.print( "Which one? " );
         int choice = kb.nextInt();

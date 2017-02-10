@@ -36,7 +36,7 @@ public class Ex17WordCounter {
     public int getCount(String word) {
         int count = 0;
         for (String s : words) {
-            if (s.equals(word)) {
+            if (s.equalsIgnoreCase(word)) {
                 count++;
             }
         }
