@@ -54,5 +54,17 @@ public class Ex40ListAndMap {
                 list.add(key);
     }
 
-    //public static String theVeryBest(Map){}
+    /*
+    public static String theVeryBest(Map<String, Integer>){
+        for (String s:strings){
+
+        }
+        // Look through all the keys in the map
+        // return the key with largest count
+    }
+
+    public static longTail(Map, List){
+
+    }
+    */
 }

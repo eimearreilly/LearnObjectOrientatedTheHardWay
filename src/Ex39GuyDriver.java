@@ -11,6 +11,15 @@ public class Ex39GuyDriver {
         Collections.sort(list);
         for(Ex39Guy g : list)
             System.out.println(g);
+
+        // Using indexOf() ArrayList method to find the index of a particular Guy object in the list
+        Ex39Guy testGuy = new Ex39Guy("Eimear",24);
+        int testint = list.indexOf(testGuy);
+        System.out.println(testint);
+        Ex39Guy testGuy2 = new Ex39Guy("Alice", 25);
+        int testint2 = list.indexOf(testGuy2);
+        System.out.println(testint2);
+
     }
 
     public static ArrayList<Ex39Guy> getListFromFile(String filename){
@@ -35,5 +44,8 @@ public class Ex39GuyDriver {
         }
         in.close();
         return list;
+
+
+
     }
 }

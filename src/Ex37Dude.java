@@ -14,24 +14,16 @@ public class Ex37Dude {
 
     // Adding the try and exception to equals method
     @Override
-    /*public boolean equals(Object obj) {
-        if (obj == null)
-            return false;
+
+    public boolean equals(Object obj) {
         try {
             Ex37Dude other = (Ex37Dude) obj;
+            return (this.age == other.age && this.name.equals(other.name) && Math.abs(this.mass - other.mass) <= 0.1);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        catch (ClassCastException e) {
-            return false;
-        }
-        return (this.age == other.age && this.name.equals(other.name)) && Math.abs(this.mass - other.mass) <= 0.1);
-
-
-    }*/
-    public boolean equals(Object obj) {
-        Ex37Dude other = (Ex37Dude) obj;
-        return (this.age == other.age && this.name.equals(other.name) && Math.abs(this.mass - other.mass) <= 0.1);
+        return false;
     }
-
     @Override
     public String toString(){
         return name + "|" + age + "|" + mass + "kg";
